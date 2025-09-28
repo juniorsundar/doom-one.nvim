@@ -67,6 +67,13 @@ doom_one.set_colorscheme = function()
 
 	--- GENERAL UI
 	-----------------
+  set_hl("BlinkCmpMenu", { fg = palette.fg, bg = palette.bg })
+  set_hl("BlinkCmpMenuBorder", { fg = palette.fg, bg = palette.bg })
+  set_hl("BlinkCmpKind", { fg = palette.fg, bg = palette.bg })
+  set_hl("WinBar", { fg = palette.fg, bg = palette.bg})
+  set_hl("WinBarNC", { fg = palette.fg_alt, bg = palette.bg_alt })
+  set_hl("SnacksPickerCol", { fg = palette.fg })
+
 	set_hl("Normal", { bg = config.ui.transparent_background and "NONE" or palette.bg, fg = palette.fg })
 	set_hl("NormalFloat", { bg = config.ui.transparent_background and "NONE" or palette.bg, fg = palette.fg })
 	set_hl("NormalBorder", { bg = palette.bg, fg = palette.fg })
