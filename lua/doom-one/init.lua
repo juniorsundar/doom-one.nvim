@@ -585,12 +585,12 @@ doom_one.set_colorscheme = function()
 
     -- Headlines support
     -- NOTE: requires custom highlight groups in headlines setup!
-    set_hl("Headline1", { bg = utils.blend(utils.get_hl("NeorgHeading1Title", "fg"), palette.bg, 0.18) })
-    set_hl("Headline2", { bg = utils.blend(utils.get_hl("NeorgHeading2Title", "fg"), palette.bg, 0.18) })
-    set_hl("Headline3", { bg = utils.blend(utils.get_hl("NeorgHeading3Title", "fg"), palette.bg, 0.18) })
-    set_hl("Headline4", { bg = utils.blend(utils.get_hl("NeorgHeading4Title", "fg"), palette.bg, 0.18) })
-    set_hl("Headline5", { bg = utils.blend(utils.get_hl("NeorgHeading5Title", "fg"), palette.bg, 0.18) })
-    set_hl("Headline6", { bg = utils.blend(utils.get_hl("NeorgHeading6Title", "fg"), palette.bg, 0.18) })
+    set_hl("Headline1", { bg = utils.blend(utils.get_hl("NeorgHeading1Title", "fg") or palette.red, palette.bg, 0.18) })
+    set_hl("Headline2", { bg = utils.blend(utils.get_hl("NeorgHeading2Title", "fg") or palette.orange, palette.bg, 0.18) })
+    set_hl("Headline3", { bg = utils.blend(utils.get_hl("NeorgHeading3Title", "fg") or palette.yellow, palette.bg, 0.18) })
+    set_hl("Headline4", { bg = utils.blend(utils.get_hl("NeorgHeading4Title", "fg") or palette.green, palette.bg, 0.18) })
+    set_hl("Headline5", { bg = utils.blend(utils.get_hl("NeorgHeading5Title", "fg") or palette.blue, palette.bg, 0.18) })
+    set_hl("Headline6", { bg = utils.blend(utils.get_hl("NeorgHeading6Title", "fg") or palette.violet, palette.bg, 0.18) })
   end
 
   if config.plugins.vim_illuminate then
