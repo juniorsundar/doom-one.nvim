@@ -116,8 +116,13 @@ utils.blend = function(top, bottom, alpha)
 end
 
 utils.get_hl = function(name, field)
-  local hl = vim.api.nvim_get_hl_by_name(name, true)[field]
-  return string.format("#%02X", hl)
+  local hl_definition = vim.api.nvim_get_hl(0, { name = name })
+  local color_value = hl_definition[field]
+  if color_value then
+    return string.format("#%06X", color_value)
+  end
+
+  return nil
 end
 -- }}}
 
