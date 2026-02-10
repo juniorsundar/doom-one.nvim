@@ -93,7 +93,7 @@ doom_one.set_colorscheme = function()
   set_hl("CursorLineNr", { bg = palette.bg, fg = palette.fg })
   set_hl("CursorColumn", { bg = palette.bg_alt })
 
-  set_hl("Folded", { bg = palette.bg_alt, fg = palette.base5 })
+  set_hl("Folded", { bg = palette.bg })
   set_hl("FoldColumn", { bg = config.ui.transparent_background and "NONE" or palette.bg, fg = palette.fg_alt })
   set_hl("SignColumn", { bg = config.ui.transparent_background and "NONE" or palette.bg })
   set_hl("ColorColumn", { bg = palette.bg_alt })
