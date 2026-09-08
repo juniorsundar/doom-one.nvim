@@ -8,7 +8,7 @@
 
 local doom_one = {}
 
-local if_nil = vim.F.if_nil
+local if_nil = vim.nonnil
 local utils = require("doom-one.utils")
 local colors = require("doom-one.colors")
 
