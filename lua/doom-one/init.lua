@@ -8,7 +8,13 @@
 
 local doom_one = {}
 
-local if_nil = vim.nonnil
+local if_nil = nil
+if vim.version().minor < 13 then
+  if_nil = vim.F.if_nil
+else
+  if_nil = vim.nonnil
+end
+
 local utils = require("doom-one.utils")
 local colors = require("doom-one.colors")
 
